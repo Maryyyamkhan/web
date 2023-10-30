@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>cabIN</title>
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <style type="text/css">
+      body{
+   background-color: var(--black);
+   overflow-x: hidden;
+   /* padding-bottom: 7rem; */
+}
+
+.container{
+   padding-top: 10rem;
+}
+
+section{
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 2rem;
+}
+
+.heading{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 7rem;
+   color: var(--white);
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.btn{
+   display: block;
+   border-radius: .5rem;
+   padding: 1.2rem 3rem;
+   background: var(--main-color);
+   color: var(--black);
+   cursor: pointer;
+   text-align: center;
+   width: 100%;
+   font-size: 1.8rem;
+   margin-top: 1rem;
+   transition: .2s linear;
+}
+
+.btn:hover{
+   background: var(--black);
+   color: var(--white);
+}
+
+.header{
+   position: fixed;
+   top: 0; left: 0; right: 0;
+   background-color: black;
+   z-index: 1000;
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1.5rem;
+}
+
+.header .flex .logo{
+   font-size: 2.5rem;
+   color: var(--main-color);
+}
+
+.header .flex .navbar a{
+   margin-left: 2rem;
+   font-size: 1.8rem;
+   color: var(--light-white);
+   transition: .2s linear;
+}
+
+.header .flex .navbar a:hover{
+   color: var(--white);
+}
+   </style>
+
+</head>
+<body style="overflow: hidden;">
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">Touravel.</a>
+
+      <nav class="navbar">
+         <a href="home.html">home</a>
+         <a href="#About">about</a>
+         <a href="#tours">tours</a>
+         <a href="#contacts">contact</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<div class="container home">
+
+   <section class="flex">
+
+      <form action="" method="post">
+         <h3>search your tour</h3>
+         <p>where to</p>
+         <input type="text" name="location" required maxlength="50" placeholder="enter location" class="box">
+         <p>when to</p>
+         <input type="date" name="date" class="box" required>
+         <p>how many</p>
+         <input type="number" name="guests" min="1" max="10" maxlength="2" placeholder="number of guests" required class="box">
+         <input type="submit" value="search tour" name="search" class="btn">
+      </form>
+
+   </section>
+
+</div>
+
+<!-- home section ends -->
+
+<!-- about section starts -->
+
+<div class="container about">
+
+   <h1 class="heading">about us</h1>
+
+   <section>
+
+      <div class="details" id="About">
+         <div class="box">
+            <h3>why choose us?</h3>
+            <p>We at Touravel always crave to give you the best experience by letting you enjoy your tours with the most amazing facilities and support system.</p>
+         </div>
+      </div>
+
+      <div class="grid">
+         
+         <div class="box">
+            <img src="images/about-img-1.svg" alt="">
+            <h3>easy bookings</h3>
+            <p>With easy interface and smooth usability. Booking is as simple as eating your favourite dish.</p>
+         </div>
+
+         <div class="box">
+            <img src="images/about-img-2.svg" alt="">
+            <h3>travel world</h3>
+            <p>With great facilities and support of our team. Travel the world tension free.</p>
+         </div>
+
+         <div class="box">
+            <img src="images/about-img-3.svg" alt="">
+            <h3>enjoy tours</h3>
+            <p>Just enjoy your tour with your friends & family and let the rest of the hassle be on us</p>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section ends -->
+
+
+<!-- tours section starts  -->
+
+<div class="container tours">
+
+   <h1 class="heading" id="tours">popular places</h1>
+
+   <section class="grid">
+
+      <div class="box">
+         <div class="price"><span>1299</span></div>
+         <img src="images/tour-img-1.webp" class="image" alt="">
+         <h3 class="name">taj mahal</h3>
+         <p class="address">agra, india</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+      <div class="box">
+         <p class="price"><span>1999</span></p>
+         <img src="images/tour-img-2.webp" alt="" class="image">
+         <h3 class="name">tokyo</h3>
+         <p class="address">tokyo, japan</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+      <div class="box">
+         <p class="price"><span>3000</span></p>
+         <img src="images/tour-img-3.webp" alt="" class="image">
+         <h3 class="name">hawaii</h3>
+         <p class="address">hawaii, united state</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+      <div class="box">
+         <p class="price"></i><span>1203</span></p>
+         <img src="images/tour-img-4.webp" alt="" class="image">
+         <h3 class="name">london</h3>
+         <p class="address">england, U.K.</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+      <div class="box">
+         <p class="price"></i><span>1999</span></p>
+         <img src="images/tour-img-5.webp" alt="" class="image">
+         <h3 class="name">lotus temple</h3>
+         <p class="address">new delhi, india</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+      <div class="box">
+         <p class="price"></i><span>1000</span></p>
+         <img src="images/tour-img-6.webp" alt="" class="image">
+         <h3 class="name">Arc de Triomphe</h3>
+         <p class="address">Paris, France</p>
+         <a href="#" class="btn">send enquiry</a>
+      </div>
+
+   </section>
+
+</div>
+
+<!-- tours section ends -->
+
+
+
+<!-- contact section starts  -->
+
+<div class="container contact">
+
+   <h1 class="heading" id="contacts">contact us</h1>
+
+   <section>
+
+      <div class="row">
+
+         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15077.086614958938!2d72.83608960687518!3d19.13958260781318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1672939645362!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="flip-left"></iframe>
+
+         <form action="" method="post">
+            <h3>get in touch</h3>
+            <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+            <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+            <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+            <textarea name="message" class="box" required maxlength="1000" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" name="send" class="btn">
+         </form>
+
+      </div>
+
+      <div class="grid">
+
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>phone number</h3>
+            <a href="tel:1234567890">+123-456-7890</a>
+            </div>
+
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>email address</h3>
+            <a href="mailto:shaikhanas@gmail.com">khan2002maryam@gmail.come</a>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>office address</h3>
+            <a href="#">Gali Chandi Wali, kuncha rehman, chandni chowk, delhi 110006</a>
+         </div>
+
+      </div>
+
+      <div class="credit">
+         &copy; copyright @ 2023 by <span>mrs maryam khan</span> | all rights reserved!
+      </div>
+
+   </section>
+
+</div>
+
+<!-- contact section ends -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
